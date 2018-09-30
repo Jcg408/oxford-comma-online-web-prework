@@ -6,9 +6,9 @@ def oxford_comma(array)
     puts array.join(' and ')
   end
   if array.length >= 3
-    finish = array.last
+    last_item = array.last
     array.pop
-    string = "#{array.join(', ')}, and #{finish}"
-    puts string
+    string = "#{array.join(', ')}, and #{last_item}"
+    return string
   end
 end
